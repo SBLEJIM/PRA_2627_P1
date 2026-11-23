@@ -39,9 +39,14 @@ class ListArray : public List<T> {
 		}
 
 	        friend std::ostream& operator<<(std::ostream &out, ListArray<T> &list) {
-			for (int i = 0; i < list.n; i++) {
-				out << list.arr[i] << " ";
+			out << "List => [";
+			if (list.n > 0) {
+				out << "\n";
 			}
+		        for (int i = 0; i < list.n; i++) {
+			        out << " " << list.arr[i] << "\n";
+			}
+		        out << "]";
 		        return out;
 		}	
 
@@ -78,7 +83,7 @@ class ListArray : public List<T> {
 	       //Elimina y devuelve el elemento en la posición pos
 	       T remove(int pos) override {
 		       if ( pos < 0 || pos >= n) {
-			       throw std::out_of_range("La posción no es válida");
+			       throw std::out_of_range("Posición inválida!");
 		       }
 		       T elemento = arr[pos];
 		       for (int i = pos + 1; i < n; i++) {
@@ -92,7 +97,7 @@ class ListArray : public List<T> {
 		//Devuelve el elemento que haya en pos
 		T get(int pos) override {
 			if (pos < 0 || pos >=n) {
-				throw std::out_of_range("La posición no es válida");
+				throw std::out_of_range("Posición inválida!");
 			}
 		        return arr[pos];
 		}	
