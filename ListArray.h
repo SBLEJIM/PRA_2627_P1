@@ -44,7 +44,7 @@ class ListArray : public List<T> {
 				out << "\n";
 			}
 		        for (int i = 0; i < list.n; i++) {
-			        out << " " << list.arr[i] << "\n";
+			        out << "  " << list.arr[i] << "\n";
 			}
 		        out << "]";
 		        return out;
