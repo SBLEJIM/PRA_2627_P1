@@ -53,7 +53,7 @@ class ListLinked : public List<T> {
                 }
                 Node<T>* aux = list.first;
                 while (aux != nullptr) {
-	            out << " " << aux->data << "\n";
+	            out << "  " << aux->data << "\n";
                     aux = aux->next;
                 }
                 out << "]";
