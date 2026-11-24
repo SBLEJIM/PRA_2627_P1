@@ -40,7 +40,7 @@ void Square::set_vertices(Point2D* vertices) {
 
 //Imprime operator<<
 void Square::print() {
-    std::cout << *this;
+    std::cout << *this << std::endl;
 }
 
 // Muestra el color y los 4 vértices 

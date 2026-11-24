@@ -58,7 +58,7 @@ void Circle::translate(double incX, double incY) {
 
 // Imprime el círculo
 void Circle::print() {
-    std::cout << *this;
+    std::cout << *this << std::endl;
 }
 
 // Define cómo se imprime un Circle, <<

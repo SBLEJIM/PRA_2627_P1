@@ -102,7 +102,7 @@ void Rectangle::translate(double incX, double incY) {
 
 //Imprime el rectángulo usando operator<<
 void Rectangle::print() {
-    std::cout << *this;
+    std::cout << *this << std::endl;
 }
 
 //(Suya)Muestra el color y los 4 vértices del rectángulo
