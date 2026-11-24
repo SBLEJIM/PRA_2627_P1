@@ -15,10 +15,10 @@ class Point2D{
 		static double distance(const Point2D &a, const Point2D &b);
 
 		//Sobrecarga ==, comprueba si dos puntos son iguales
-		bool operator==(const Point2D &other);
+		bool operator==(const Point2D &other) const;
 
 		//Sobrecarga !=, comprueba si dos puntos son diferentes
-		bool operator!=(const Point2D &other);
+		bool operator!=(const Point2D &other) const;
 
 		//Sobrecarga <<
 		friend std::ostream& operator <<(std::ostream &out, const Point2D &p);
