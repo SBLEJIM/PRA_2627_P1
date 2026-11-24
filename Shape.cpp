@@ -17,7 +17,7 @@ std::string Shape::get_color() const {
 
 //Modifica el color de relleno 
 void Shape::set_color(std::string c) {
-	if (c == "red" || c == "green" || c == "green") {
+	if (c == "red" || c == "green" || c == "blue") {
 		color = c;
 	} else {
 		throw std::invalid_argument("Color no válido. Debe ser 'red' , 'green'o 'blue'.");
