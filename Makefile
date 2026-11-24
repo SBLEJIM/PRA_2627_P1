@@ -55,3 +55,6 @@ bin/testDrawing: testDrawing.cpp Drawing.o Square.o Rectangle.o Circle.o Shape.o
 	g++ -c testDrawing.cpp
 	mkdir -p bin
 	g++ -o bin/testDrawing testDrawing.cpp Drawing.o Square.o Rectangle.o Circle.o Shape.o Point2D.o
+
+clean: 
+	rm -rf *.o *.gch *.pch bin
